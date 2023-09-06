@@ -1,0 +1,5 @@
+The user story I would like to develop is:
+
+As a user, I want it to have a search bar so that when we search by floor number the locations of nearby fire extinguishers and first-aid kits in that particular floor show up.
+
+I would like to use HTML and JavaScript for the front-end design process. I want to use Java for developing the back-end of the website. To host the website I want to use Amazon Web Services(AWS).
