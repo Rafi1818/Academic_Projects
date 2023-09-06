@@ -1,0 +1,23 @@
+{cslinux1:~/project02} g++ -std=c++11 diagonal2.cpp -o diagonal2
+{cslinux1:~/project02} ./diagonal2 WoW Sumptuous
+diagonal2.bin has been created.
+Use od -c diagonal2.bin to see the contents.
+{cslinux1:~/project02} od -c diagonal2.bin
+0000000   W   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .
+0000020   .   o   .   .   .   .   .   .   .   .   .   .   .   .   .   .
+0000040   .   .   W   .   .   .   .   .   .   .   .   .   .   .   .   .
+0000060   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .
+*
+0000400   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   S
+0000420   .   .   .   .   .   .   .   .   .   .   .   .   .   .   u   .
+0000440   .   .   .   .   .   .   .   .   .   .   .   .   .   m   .   .
+0000460   .   .   .   .   .   .   .   .   .   .   .   .   p   .   .   .
+0000500   .   .   .   .   .   .   .   .   .   .   .   t   .   .   .   .
+0000520   .   .   .   .   .   .   .   .   .   .   u   .   .   .   .   .
+0000540   .   .   .   .   .   .   .   .   .   o   .   .   .   .   .   .
+0000560   .   .   .   .   .   .   .   .   u   .   .   .   .   .   .   .
+0000600   .   .   .   .   .   .   .   s   .   .   .   .   .   .   .   .
+0000620   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .
+*
+0001000
+{cslinux1:~/project02}

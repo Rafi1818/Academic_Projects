@@ -1,0 +1,38 @@
+{cslinux1:~/project03} g++ -std=c++11 forkpipe.cpp -o forkpipe
+{cslinux1:~/project03} ./forkpipe
+
+EXCEPTION: 
+Oh my Goodness... 
+Usage: ./forkpipe <number> in forkpipe.cpp",line:131
+
+
+Press the enter key once or twice to leave...
+
+
+{cslinux1:~/project03} ./forkpipe 2
+
+
+In Parent: Write to pipe getQuoteMessage sent Message: Get Quote
+In Child: Read from pipe pipeParentWriteChildMessage read Message: Get Quote
+In Child : Write to pipe pipeParentReadChildMessage sent Message:
+“We’re fools whether we dance or not, so we might as well dance” ~Unknown
+
+In Parent: Read from pipe pipeParentReadChildMessage read Message: 
+“We’re fools whether we dance or not, so we might as well dance” ~Unknown
+
+-----------------------------------
+In Parent: Write to pipe getQuoteMessage sent Message: Get Quote
+In Child: Read from pipe pipeParentWriteChildMessage read Message: Get Quote
+In Child : Write to pipe pipeParentReadChildMessage sent Message:
+“If you have to find devices to coax yourself to stay focused on writing, perhaps you should not be writing what you’re writing. And if this lack of motivation is a constant problem, perhaps writing is not your forte. I mean, what is the problem? If writing bores you, that is pretty fatal. If that is not the case, but you find that it is hard going and it just doesn’t flow, well, what did you expect? It is work; art is work.” ~Ursula K. LeGuin
+
+In Parent: Read from pipe pipeParentReadChildMessage read Message: 
+“If you have to find devices to coax yourself to stay focused on writing, perhaps you should not be writing what you’re writing. And if this lack of motivation is a constant problem, perhaps writing is not your forte. I mean, what is the problem? If writing bores you, that is pretty fatal. If that is not the case, but you find that it is hard going and it just doesn’t flow, well, what did you expect? It is work; art is work.” ~Ursula K. LeGuin
+
+-----------------------------------
+In Parent: Write to pipe ParentWriteChildExitMessage sent Message: Exit
+Parent Done
+In Child: Read from pipe pipeParentWriteChildMessage read Message: Exit
+Child Done
+
+{cslinux1:~/project03} 

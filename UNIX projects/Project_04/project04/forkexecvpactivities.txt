@@ -1,0 +1,40 @@
+{cslinux1:~/project04} ./forkexecvp randomnumber.txt 100 100
+
+./forkexecvp randomnumber.txt 100 100
+Parent pid : 18753 to Child Process No : 0
+Send Message : sum
+Parent pid : 18753 to Child Process No : 1
+Send Message : average
+Child pid : 18754 Child Process No : 0 Received Message : sum
+Child pid : 18754 Child Process No : 0
+Child pid : 18755 Child Process No : 1 Received Message : average
+execvp(./calculate, ./calculate, randomnumber.txt, NULL)
+Parent pid : 18753 to Child Process No : 2
+Child pid : 18755 Child Process No : 1
+Send Message : greatest
+execvp(./calculate, ./calculate, randomnumber.txt, NULL)
+Child pid : 18756 Child Process No : 2 Received Message : greatest
+Parent pid : 18753 to Child Process No : 3
+Child pid : 18756 Child Process No : 2
+Send Message : least
+execvp(./calculate, ./calculate, randomnumber.txt, NULL)
+Parent pid: 18753 Start - Wait for all calculate children to finish
+Child pid : 18757 Child Process No : 3 Received Message : least
+Child pid : 18757 Child Process No : 3
+execvp(./calculate, ./calculate, randomnumber.txt, NULL)
+Parent pid: 18753 Done - Wait for all calculate children to finish
+Parent pid : 18753 Use execvp() cat to display answer files: 
+Child pid : 18758
+cat answersum.txt
+Parent pid: 18753 Start - Wait for all display answer file children to finish
+Child pid : 18759
+cat answeraverage.txt
+Child pid : 18760
+cat answergreatest.txt
+Child pid : 18761
+cat answerleast.txt
+Sum      : 5424
+Average  : 54.24
+Greatest : 100
+Least    : 1
+Parent pid: 18753 Done - Wait for all display answer file children to finish

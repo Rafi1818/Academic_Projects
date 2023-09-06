@@ -1,0 +1,205 @@
+{cslinux1:~/project06} ./sockserver &
+[1] 37314
+{cslinux1:~/project06} ./sockclient
+
+
+Try to guess a number between q and 100
+
+Current Try Number : 1
+Enter number guess : 
+
+50
+
+Server reply :
+
+The number is greater than : 50
+
+Current Try Number : 2
+Enter number guess : 
+
+75
+
+Server reply :
+
+The number is greater than : 75
+
+Current Try Number : 3
+Enter number guess : 
+
+87
+
+Server reply :
+
+The number is greater than : 87
+
+Current Try Number : 4
+Enter number guess : 
+
+93
+
+Server reply :
+
+The number is less than : 93
+
+Current Try Number : 5
+Enter number guess : 
+
+90
+
+Server reply :
+
+The number is greater than : 90
+
+Current Try Number : 6
+Enter number guess : 
+
+92
+
+Server reply :
+
+The number is less than : 92
+
+Current Try Number : 7
+Enter number guess : 
+
+91
+
+Server reply :
+
+You Win !! The number is : 91
+
+Client disconnected
+{cslinux1:~/project06} 
+
+
+
+
+
+
+
+
+
+
+
+
+{cslinux1:~/project06} ./sockclient
+
+
+Try to guess a number between q and 100
+
+Current Try Number : 1
+Enter number guess : 
+
+50
+
+Server reply :
+
+The number is greater than : 50
+
+Current Try Number : 2
+Enter number guess : 
+
+51
+
+Server reply :
+
+The number is greater than : 51
+
+Current Try Number : 3
+Enter number guess : 
+
+25
+
+Server reply :
+
+The number is greater than : 25
+
+Current Try Number : 4
+Enter number guess : 
+
+34
+
+Server reply :
+
+The number is greater than : 34
+
+Current Try Number : 5
+Enter number guess : 
+
+27
+
+Server reply :
+
+The number is greater than : 27
+
+Current Try Number : 6
+Enter number guess : 
+
+78
+
+Server reply :
+
+The number is greater than : 78
+
+Current Try Number : 7
+Enter number guess : 
+
+31
+
+Server reply :
+
+The number is greater than : 31
+
+Current Try Number : 8
+Enter number guess : 
+
+0
+
+Server reply :
+
+The number is greater than : 0
+
+Current Try Number : 9
+Enter number guess : 
+
+9
+
+Server reply :
+
+The number is greater than : 9
+
+Current Try Number : 10
+Enter number guess : 
+
+4
+
+Server reply :
+
+The number is greater than : 4
+
+Current Try Number : 11
+Enter number guess : 
+
+45
+
+Server reply :
+
+The number is greater than : 45
+
+Current Try Number : 12
+Enter number guess : 
+
+32
+
+Server reply :
+
+The number is greater than : 32
+
+
+The maximum number of tries 12 is done.
+The random number is : 83
+
+Game is over 
+
+Client disconnected
+{cslinux1:~/project06}

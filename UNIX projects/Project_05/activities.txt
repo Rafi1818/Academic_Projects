@@ -1,0 +1,167 @@
+{cslinux1:~/project05} ./gserver words.txt &
+[1] 36670
+{cslinux1:~/project05} ./gclient
+
+
+Game Start
+You have 12 letter guesses to win
+
+
+Client: 1
+No of tries : 0
+(Guess) Enter a letter in the word : -------------
+
+a
+
+Client: 1
+No of tries : 1
+(Guess) Enter a letter in the word : -------------
+
+e
+
+Client: 1
+No of tries : 2
+(Guess) Enter a letter in the word : ---------e---
+
+i
+
+Client: 1
+No of tries : 3
+(Guess) Enter a letter in the word : ---------e---
+
+o
+
+Client: 1
+No of tries : 4
+(Guess) Enter a letter in the word : ------o--e---
+
+u
+
+Client: 1
+No of tries : 5
+(Guess) Enter a letter in the word : u--u--o--e---
+
+n
+
+Client: 1
+No of tries : 6
+(Guess) Enter a letter in the word : un-u--o--e---
+
+d
+
+Client: 1
+No of tries : 7
+(Guess) Enter a letter in the word : un-u--o--ed--
+
+v 
+
+Client: 1
+No of tries : 8
+(Guess) Enter a letter in the word : un-u--o--ed--
+
+l
+
+Client: 1
+No of tries : 9
+(Guess) Enter a letter in the word : un-u--o--edl-
+
+q
+
+Client: 1
+No of tries : 10
+(Guess) Enter a letter in the word : un-u--o--edl-
+
+w
+
+Client: 1
+No of tries : 11
+(Guess) Enter a letter in the word : un-u--o--edl-
+
+f
+
+Client: 1
+No of tries : 12
+(Guess) Enter a letter in the word : un-u--o--edl-
+
+g
+
+
+Out of tries : 12 allowed
+The word is: unsupportedly
+
+[1]+  Done                    ./gserver words.txt
+{cslinux1:~/project05} 
+
+
+
+
+{cslinux1:~/project05} ./gserver words.txt &
+[1] 44150
+{cslinux1:~/project05} ./gclient
+
+
+Game Start
+You have 12 letter guesses to win
+
+
+Client: 1
+No of tries : 0
+(Guess) Enter a letter in the word : ----------
+
+a
+
+Client: 1
+No of tries : 1
+(Guess) Enter a letter in the word : a-a------a
+
+e
+
+Client: 1
+No of tries : 2
+(Guess) Enter a letter in the word : a-a-e---ea
+
+i
+
+Client: 1
+No of tries : 3
+(Guess) Enter a letter in the word : a-a-e-i-ea
+
+o
+
+Client: 1
+No of tries : 4
+(Guess) Enter a letter in the word : a-a-eoi-ea
+
+r
+
+Client: 1
+No of tries : 5
+(Guess) Enter a letter in the word : ara-eoi-ea
+
+g
+
+Client: 1
+No of tries : 6
+(Guess) Enter a letter in the word : ara-eoi-ea
+
+c
+
+Client: 1
+No of tries : 7
+(Guess) Enter a letter in the word : ara-eoi-ea
+
+n
+
+Client: 1
+No of tries : 8
+(Guess) Enter a letter in the word : araneoi-ea
+
+d
+
+araneoidea
+
+
+You Win!
+
+[1]+  Done                    ./gserver words.txt
+{cslinux1:~/project05} 
