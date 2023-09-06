@@ -1,0 +1,73 @@
+%8 DJ Problem(Zebra-style)
+
+:- use_module(library(clpfd)).
+
+dj :-
+    Color   = [Black,         Blue,     Green,       Red,      White],
+    Nation  = [American,      Canadian, Dutch,       French,   Scottish],
+    Genres  = [Drum_and_bass, Dubstep,  EDM,         House,    Trance],
+    Stages  = [Arcadia,       Asgard,   Shangri_la,  Valhalla, Xibalba],
+    Age     = [Twenty_Five,   Thirty,   Thirty_Five, Forty,    Forty_Five],
+    Hobby   = [Camping,       Juggling, Painting,    Singing,  Surfing],
+
+    % DJ numbers 1 to 6
+    Color   ins 1..5,
+    Nation  ins 1..5,
+    Genres  ins 1..5,
+    Stages  ins 1..5,
+    Age     ins 1..5,
+    Hobby   ins 1..5,
+    
+    % the values in each list are exclusive
+    all_different(Color),
+    all_different(Nation),
+    all_different(Genres),
+    all_different(Stages),
+    all_different(Age),
+    all_different(Hobby),
+    
+    % actual constraints
+    (Scottish #= White - 1 #\/ Scottish #= White - 2 #\/ Scottish #= White - 3 #\/ Scottish #= White - 4),
+    Arcadia #= 4,
+    Thirty #= 1,
+    EDM #= Canadian + 1,
+    (Painting #= Dubstep + 1 #\/ Painting #= Dubstep - 1),
+    (Black #= Scottish + 1 #\/ Black #= Scottish + 2 #\/ Black #= Scottish + 3),
+    (Black #= Dubstep - 1 #\/ Black #= Dubstep - 2 #\/ Black #= Dubstep - 3),
+    (French #= Blue + 1 #\/ French #= Blue - 1),
+    (Camping #= 1 #\/ Camping #= 5),
+    Blue #= Asgard,
+    (Painting #= Green + 1 #\/ Painting #= Green + 2 #\/ Painting #= Green + 3),
+    (Painting #= Blue - 1 #\/ Painting #= Blue - 2 #\/ Painting #= Blue - 3),
+    Drum_and_bass #= 5,
+    Asgard #= 3,
+    (Trance #= Dubstep - 1 #\/ Trance #= Dubstep + 1),
+    Canadian #= Juggling - 1,
+    Singing #= Black + 1,
+    (Thirty_Five #= Juggling + 1 #\/ Thirty_Five #= Juggling - 1),
+    Forty #= 4,
+    (Forty #= Dutch + 1 #\/ Forty #= Dutch + 2 #\/ Forty #= Dutch + 3),
+    (Forty #= Twenty_Five - 1 #\/ Forty #= Twenty_Five - 2 #\/ Forty #= Twenty_Five - 3),
+    (Blue #= Xibalba - 1 #\/ Blue #= Xibalba - 2 #\/ Blue #= Xibalba - 3 #\/ Blue #= Xibalba - 4),
+    Surfing #= Valhalla,
+    (Red #= French + 1 #\/ Red #= French + 2 #\/ Red #= French + 3 #\/ Red #= French + 4),
+
+
+    % get solution
+    flatten([Color, Nation, Genres, Stages, Age, Hobby], List), label(List),
+   
+    % print the answers
+    sort([Black-' Black',                 Blue-' Blue',         Green-' Green',               Red-' Red',           White-' White'],     ColorNames),
+    sort([American-' American',           Canadian-' Canadian', Dutch-' Dutch',               French-' French',     Scottish-' Scott'],  NationNames),
+    sort([Drum_and_bass-' Drum and Bass', Dubstep-' Dubstep',   EDM-' EDM',                   House-' House',       Trance-' Trance'],   GenreNames),
+    sort([Arcadia-' Arcadia',             Asgard-' Asgard',     Shangri_la-' Shangri-la',     Valhalla-' Valhalla', Xibalba-' Xibalba'], StageNames),
+    sort([Twenty_Five-' 25',              Thirty-' 30',         Thirty_Five-' 35',            Forty-' 40',          Forty_Five-' 45'],   AgeNames),
+    sort([Camping-' Camping',             Juggling-' Juggling', Painting-' Painting',         Singing-' Singing',   Surfing-' Surfing'], HobbyNames),
+
+    Fmt = 'DJ-~w~16|DJ-~w~34|DJ-~w~50|DJ-~w~66|DJ-~w~n',
+    format(Fmt, ColorNames),
+    format(Fmt, NationNames),
+    format(Fmt, GenreNames),
+    format(Fmt, StageNames),
+    format(Fmt, AgeNames),
+    format(Fmt, HobbyNames).
