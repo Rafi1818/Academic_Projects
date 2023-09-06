@@ -1,0 +1,4 @@
+3
+Cancun|New York|T
+Cancun|New York|C
+Cancun|Paris|T
