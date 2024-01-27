@@ -1,0 +1,149 @@
+Instruction for running:
+    - No extra step needed to run the program. Just run the Main.java file
+    - To change the initial and final state two methods need to be changed in the Main.java file
+        - populateState()
+        - getTargetState()
+
+Sample Input:
+    6 7 1
+    8 2    ->  Initial State
+    5 4 3
+
+Sample Output:
+    DFS Solution:
+
+    6 7 1
+    8 2    ->  State: 0
+    5 4 3
+
+    6 7 1
+    8   2  ->  State: 1
+    5 4 3
+
+    6 7 1
+      8 2  ->  State: 2
+    5 4 3
+
+      7 1
+    6 8 2  ->  State: 3
+    5 4 3
+
+    7   1
+    6 8 2  ->  State: 4
+    5 4 3
+
+      7 1
+    6 8 2  ->  State: 5
+    5 4 3
+
+    7   1
+    6 8 2  ->  State: 6
+    5 4 3
+
+      7 1
+    6 8 2  ->  State: 7
+    5 4 3
+
+    7   1
+    6 8 2  ->  State: 8
+    5 4 3
+
+    7 8 1
+    6   2  ->  State: 9
+    5 4 3
+
+    Number of moves = 9
+
+    Iterative Deepening Search Solution:
+
+    6 7 1
+    8 2    ->  State: 0
+    5 4 3
+
+    6 7 1
+    8   2  ->  State: 1
+    5 4 3
+
+    6 7 1
+      8 2  ->  State: 2
+    5 4 3
+
+      7 1
+    6 8 2  ->  State: 3
+    5 4 3
+
+    7   1
+    6 8 2  ->  State: 4
+    5 4 3
+
+    7 8 1
+    6   2  ->  State: 5
+    5 4 3
+
+    Number of moves = 5
+
+    A* Search Solution (Heuristic 1):
+
+    6 7 1
+    8 2    ->  State: 0
+    5 4 3
+
+    6 7 1
+    8   2  ->  State: 1
+    5 4 3
+
+    6 7 1
+      8 2  ->  State: 2
+    5 4 3
+
+      7 1
+    6 8 2  ->  State: 3
+    5 4 3
+
+    7   1
+    6 8 2  ->  State: 4
+    5 4 3
+
+    7 8 1
+    6   2  ->  State: 5
+    5 4 3
+
+    Number of moves = 5
+
+    A* Search Solution (Heuristic 2):
+
+    6 7 1
+    8 2    ->  State: 0
+    5 4 3
+
+    6 7 1
+    8   2  ->  State: 1
+    5 4 3
+
+    6 7 1
+      8 2  ->  State: 2
+    5 4 3
+
+      7 1
+    6 8 2  ->  State: 3
+    5 4 3
+
+    7   1
+    6 8 2  ->  State: 4
+    5 4 3
+
+    7 8 1
+    6   2  ->  State: 5
+    5 4 3
+
+    Number of moves = 5
+
+Comparative Analysis
+    - Heuristic 1 (Manhattan Distance Heuristic)
+        - It measures the sum of the horizontal and vertical distances between the current position of each tile and its goal position.
+        - It's admissible, so it never overestimates the cost to reach the goal.
+        - One limitation for this is it assumes that tiles can only move horizontally or vertically, not diagonally.
+    - Heuristic 2 (Misplaced Tiles Heuristic)
+        - It counts the number of tiles that are not in their goal positions.
+        - This is also admissible.
+        - One limitation for this is it may not differentiate well between different states with the same number of misplaced tiles.
